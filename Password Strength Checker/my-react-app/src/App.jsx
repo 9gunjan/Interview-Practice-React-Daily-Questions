@@ -1,10 +1,12 @@
 import "./App.css";
 import CheckPasswordStrength from "./components/checkPasswordStrength.jsx";
+import GuessTheNumber from "./components/GuessTheNumber.jsx";
 
 function App() {
   return (
     <div>
-      <CheckPasswordStrength />
+      {/* <CheckPasswordStrength /> */}
+      <GuessTheNumber/>
     </div>
   );
 }

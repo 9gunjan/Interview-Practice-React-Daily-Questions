@@ -63,6 +63,14 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #dacece;
+    margin: 4px;
   }
+}
+.btns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+
 }
