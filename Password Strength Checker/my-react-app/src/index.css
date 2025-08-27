@@ -63,8 +63,8 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #dacece;
-    margin: 4px;
+    background-color: #b2a7a7;
+    margin: 8px;
   }
 }
 .btns{
@@ -74,3 +74,9 @@ button:focus-visible {
   margin: 10px;
 
 }
+
+.container{
+  background-color: rgb(185, 204, 204);
+  padding:50px;
+  border-radius: 50px;
+  }
