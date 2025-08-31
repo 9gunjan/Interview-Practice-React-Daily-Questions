@@ -1,6 +1,7 @@
 import "./App.css";
 import AgeCalculator from "./components/AgeCalculator.jsx";
 import CheckPasswordStrength from "./components/checkPasswordStrength.jsx";
+import CounterUsingReact from "./components/CounterUsingReact.jsx";
 import GuessTheNumber from "./components/GuessTheNumber.jsx";
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
     <div>
       {/* <CheckPasswordStrength /> */}
       {/* <GuessTheNumber/> */}
-      <AgeCalculator/>
+      {/* <AgeCalculator/> */}
+      <CounterUsingReact/>
     </div>
   );
 }
