@@ -3,6 +3,8 @@ import AgeCalculator from "./components/AgeCalculator.jsx";
 import CheckPasswordStrength from "./components/checkPasswordStrength.jsx";
 import CounterUsingReact from "./components/CounterUsingReact.jsx";
 import GuessTheNumber from "./components/GuessTheNumber.jsx";
+import Sidebar from "./components/Sidebar.jsx";
+import TabSwitcher from "./components/TabSwitcher.jsx";
 
 function App() {
   return (
@@ -10,7 +12,9 @@ function App() {
       {/* <CheckPasswordStrength /> */}
       {/* <GuessTheNumber/> */}
       {/* <AgeCalculator/> */}
-      <CounterUsingReact/>
+      {/* <CounterUsingReact/> */}
+      {/* <Sidebar/> */}
+      <TabSwitcher />
     </div>
   );
 }
