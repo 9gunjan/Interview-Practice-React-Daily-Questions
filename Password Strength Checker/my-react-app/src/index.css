@@ -30,6 +30,7 @@ body {
   min-height: 100vh;
 }
 
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -80,6 +81,12 @@ button:focus-visible {
   padding:50px;
   border-radius: 50px;
   } */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .sidebar {
   position: fixed;
   right: 0; /* changed from left: 0 */
@@ -190,7 +197,70 @@ button:focus-visible {
 .tab:hover {
   background-color: rgb(180, 242, 242);
 }
-.tab.active{
+.tab.active {
   background-color: #4b6cb7;
   color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; /* Or your preferred font */
+}
+
+/* Apply to the main container element */
+.app-container {
+  min-height: 100vh; /* Ensures it takes at least the full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for both background and text color */
+}
+
+/* Styles for the light mode */
+.light {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Styles for the dark mode */
+.dark {
+  background-color: #222;
+  color: #fff;
+}
+
+/* Toggle switch styles */
+.toggle {
+  height: 30px;
+  width: 60px;
+  border-radius: 50px;
+  background-color: #ccc; /* Default background for the toggle track */
+  position: relative;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Add some spacing */
+}
+
+.toggle.active {
+  background-color: #4caf50; /* Green when active */
+}
+
+.circle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: white;
+  transition: left 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: add a subtle shadow */
+}
+
+.circle.circle-right {
+  left: 30px; /* Moves the circle to the right when active */
 }

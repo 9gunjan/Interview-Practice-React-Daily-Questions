@@ -3,9 +3,9 @@ import React, { useState } from "react";
 const TabSwitcher = () => {
   const buttonArray = ["Home", "Profile", "Settings"];
   const contentArray = [
-    "This is the Home page",
-    "This is the Profile page",
-    "This is the Settings page",
+    { id: 0, content: "This is the Home page" },
+    { id: 1, content: "This is the Profile page" },
+    { id: 2, content: "This is the Settings page" },
   ];
   const [activeTab, setActiveTab] = useState(0);
   return (
@@ -23,7 +23,7 @@ const TabSwitcher = () => {
         ))}
       </div>
       <div>
-        <p>{contentArray[activeTab]}</p>
+        <p>{contentArray.find((item) => item.id === activeTab)?.content}</p>
       </div>
     </div>
   );
